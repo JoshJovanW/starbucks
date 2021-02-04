@@ -1,12 +1,12 @@
 from coffee import Coffee
 
-class SoyLatte(Coffee):
+class Frappucino(Coffee):
     def details(self):
-        return("The layers of espresso and steamed milk are mixed together and topped with a light layer of foam. The drink is creamier and the coffee flavor is more subtle.")
+        return("It consists of coffee or crème base, blended with ice and other various ingredients, usually topped with whipped cream and flavored syrups")
 
     def add_topping(self, topping, price):
-        if topping == "with extra cloud foam":
-            print("sorry this drink cant use cloud foam, please choose another topping.")
+        if topping == "with extra jelly":
+            print("sorry this drink cant use extra jelly, please use another topping.")
         else:
             self.topping = topping
             self.price += price
